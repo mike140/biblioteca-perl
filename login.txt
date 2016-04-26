@@ -1,0 +1,4 @@
+adm,root,pass
+emp,user1,hola
+emp,user2,test
+usr,user3,hi
