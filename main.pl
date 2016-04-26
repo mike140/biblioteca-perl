@@ -35,7 +35,7 @@ do{
 }while(!$acceso);
 
 system "cls";
-print "\nEl tipo de usuario es $user{type}";
+print "\nBienvenido!\nEl tipo de usuario es $user{type}";
 
 sub readData{
 	print $_[0]; #imprime el argumento dado a la función
