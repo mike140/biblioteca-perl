@@ -21,7 +21,7 @@ do{
             $user = fetchArray("login.txt", "([^,]+,){2}$userName,$pass,[^,]+,"); 
 
             if($user && $user->{STATUS} eq "1"){
-                pause("Bienvenido $user->{nombre}!)";
+                pause("Bienvenido $user->{nombre}!");
             }
             else{
                 pause("Error, usuario o password incorrecto");
@@ -70,7 +70,7 @@ sub menu{ #recibe un mapa para imprimir un menu, verifica la opcion que este bie
 
        $validInput = grep(/^$op$/, @options);
        if(!$validInput){
-            pause "Porfavor, escoga una opcion del menu";
+            pause("Porfavor, escoga una opcion del menu");
             system "cls";
        }
     }while(!$validInput);
